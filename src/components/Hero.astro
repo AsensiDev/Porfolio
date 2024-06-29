@@ -1,0 +1,53 @@
+---
+const personalImageAlt = "Pablo Asensi"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import SocialPill from "@/components/SocialPill.astro"
+import Youtube from "./icons/Youtube.astro"
+import GitHub from "./icons/GitHub.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/asensidev.webp"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://www.linkedin.com/in/pablo-asensi-cano-405220219/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center "
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight sm:text-5xl text-white"
+  >
+    Hey, soy asensiDev
+  </h1>
+  <p
+    class="mt-6 text-xl [&>strong]:text-yellow-200 [&>strong]:font-semibold text-gray-300"
+  >
+    +6 meses de experiencia. <strong
+      >Desarrollador Web y Creador de Contenido</strong
+      > sobre Programación de Alicante, España. Especializado en el desarrollo de aplicaciones web
+    únicas.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="https://www.linkedin.com/in/pablo-asensi-cano-405220219/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/AsensiDev">
+      <GitHub class="size-4" />
+      GitHub
+    </SocialPill>
+    <SocialPill href="https://www.youtube.com/channel/UCQQl7WNMScHD6tvP36J2KmA">
+      <Youtube class="size-4" />
+      YouTube
+    </SocialPill>
+  </nav>
+</div>
